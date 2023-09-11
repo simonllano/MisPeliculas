@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/logo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey2">
+
+
+        <ImageView
+            android:id="@+id/logo_image_view"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/palomitas" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_text_input_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColorHint="@color/blue2"
+            app:boxStrokeColor="@color/blue2"
+            app:counterTextColor="@color/blue2"
+            app:helperTextTextColor="@color/blue2"
+            app:hintTextColor="@color/blue2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo_image_view"
+            app:placeholderTextColor="@color/blue2"
+            app:prefixTextColor="@color/blue2"
+            app:suffixTextColor="@color/blue2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_text_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/blue2"
+                android:textColorHint="#546E7A"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_text_input_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColorHint="@color/blue2"
+            app:boxStrokeColor="@color/blue2"
+            app:counterTextColor="@color/blue2"
+            app:helperTextTextColor="@color/blue2"
+            app:hintTextColor="@color/blue2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_text_input_layout"
+            app:placeholderTextColor="@color/blue2"
+            app:prefixTextColor="@color/blue2"
+            app:suffixTextColor="@color/blue2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_text_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Password"
+                android:inputType="textPassword"
+                android:textColor="@color/blue2"
+                android:textColorHighlight="@color/blue2"
+                android:textColorHint="@color/blue2"
+                android:textColorLink="@color/blue2"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/rep_password_text_input_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColorHint="@color/blue2"
+            app:boxStrokeColor="@color/blue2"
+            app:counterTextColor="@color/blue2"
+            app:helperTextTextColor="@color/blue2"
+            app:hintTextColor="@color/blue2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_text_input_layout"
+            app:placeholderTextColor="@color/blue2"
+            app:prefixTextColor="@color/blue2"
+            app:suffixTextColor="@color/blue2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/rep_password_text_input_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/rep_password"
+                android:inputType="textPassword"
+                android:textColor="@color/blue2"
+                android:textColorHighlight="@color/blue2"
+                android:textColorHint="@color/blue2"
+                android:textColorLink="@color/blue2"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/genre_radio_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rep_password_text_input_layout">
+
+            <RadioButton
+                android:id="@+id/female_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/female"
+                android:textColor="@color/blue2"
+                android:textColorHighlight="@color/blue2"
+                android:textColorHint="@color/blue2"
+                android:textColorLink="@color/blue2" />
+
+            <RadioButton
+                android:id="@+id/male_Radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:shadowColor="@color/blue2"
+                android:text="@string/male"
+                android:textColor="@color/blue2"
+                android:textColorHighlight="@color/blue2"
+                android:textColorHint="@color/blue2"
+                android:textColorLink="@color/blue2" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/genre_favorite_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/favorite_movies"
+            android:textColor="@color/blue2"
+            android:textColorHighlight="@color/blue2"
+            android:textColorHint="@color/blue2"
+            android:textColorLink="@color/blue2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genre_radio_group" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genre_favorite_text_view">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/action_check_Box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/genre_action"
+                    android:textColor="@color/blue2"
+                    android:textColorHighlight="@color/blue2"
+                    android:textColorHint="@color/blue2"
+                    android:textColorLink="@color/blue2" />
+
+                <CheckBox
+                    android:id="@+id/love_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/genre_love"
+                    android:textColor="@color/blue2"
+                    android:textColorHighlight="@color/blue2"
+                    android:textColorHint="@color/blue2"
+                    android:textColorLink="@color/blue2" />
+
+                <CheckBox
+                    android:id="@+id/adventure_check_Box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/genre_aventure"
+                    android:textColor="@color/blue2"
+                    android:textColorHighlight="@color/blue2"
+                    android:textColorHint="@color/blue2"
+                    android:textColorLink="@color/blue2" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/comedy_check_Box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/genre_comedy"
+                    android:textColor="@color/blue2"
+                    android:textColorHighlight="@color/blue2"
+                    android:textColorHint="@color/blue2"
+                    android:textColorLink="@color/blue2" />
+
+                <CheckBox
+                    android:id="@+id/drama_check_Box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/genre_drama"
+                    android:textColor="@color/blue2"
+                    android:textColorHighlight="@color/blue2"
+                    android:textColorHint="@color/blue2"
+                    android:textColorLink="@color/blue2" />
+
+                <CheckBox
+                    android:id="@+id/fantasy_check_Box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/genre_fantasy"
+                    android:textColor="@color/blue2"
+                    android:textColorHighlight="@color/blue2"
+                    android:textColorHint="@color/blue2"
+                    android:textColorLink="@color/blue2" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/fiction_check_Box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/genre_fiction"
+                    android:textColor="@color/blue2"
+                    android:textColorHighlight="@color/blue2"
+                    android:textColorHint="@color/blue2"
+                    android:textColorLink="@color/blue2" />
+
+                <CheckBox
+                    android:id="@+id/suspense_check_Box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/genre_suspense"
+                    android:textColor="@color/blue2"
+                    android:textColorHighlight="@color/blue2"
+                    android:textColorHint="@color/blue2"
+                    android:textColorLink="@color/blue2" />
+
+                <CheckBox
+                    android:id="@+id/terror_check_Box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/genre_terror"
+                    android:textColor="@color/blue2"
+                    android:textColorHighlight="@color/blue2"
+                    android:textColorHint="@color/blue2"
+                    android:textColorLink="@color/blue2" />
+            </TableRow>
+
+        </TableLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/data_picker_input_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColorHint="@color/blue2"
+            app:boxStrokeColor="@color/blue2"
+            app:counterTextColor="@color/blue2"
+            app:helperTextTextColor="@color/blue2"
+            app:hintTextColor="@color/blue2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+            app:placeholderTextColor="@color/blue2"
+            app:prefixTextColor="@color/blue2"
+            app:suffixTextColor="@color/blue2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/data_picker_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/date_birth"
+                android:inputType="text"
+                android:textColor="@color/blue2"
+                android:textColorHighlight="@color/blue2"
+                android:textColorHint="@color/blue2"
+                android:textColorLink="@color/blue2"
+                tools:ignore="TextContrastCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/city_text_View"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/birth_place"
+            android:textColor="@color/blue2"
+            android:textColorHighlight="@color/blue2"
+            android:textColorHint="@color/blue2"
+            android:textColorLink="@color/blue2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/data_picker_input_layout" />
+
+        <Spinner
+            android:id="@+id/city_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:entries="@array/city_list"
+            android:minHeight="48dp"
+            android:textColor="@color/blue2"
+            android:textColorHighlight="@color/blue2"
+            android:textColorHint="@color/blue2"
+            android:textColorLink="@color/blue2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/city_text_View" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/grey1"
+            android:text="@string/register"
+            android:textColor="@color/blue2"
+            android:textColorHighlight="@color/blue2"
+            android:textColorHint="@color/blue2"
+            android:textColorLink="@color/blue2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/city_spinner"
+            tools:ignore="VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/info_text_View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/information"
+            android:textColor="@color/design_default_color_error"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

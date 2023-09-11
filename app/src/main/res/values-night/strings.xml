@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Register">Registro</string>
+    <string name="information">Informacion</string>
+    <string name="female">Femenino</string>
+    <string name="male">Masculino</string>
+    <string name="genre_action">Accion</string>
+    <string name="genre_love">Amor</string>
+    <string name="genre_aventure">Aventura</string>
+    <string name="genre_fantasy">Fantasia</string>
+    <string name="genre_comedy">Comedia</string>
+    <string name="genre_fiction">Ficcion</string>
+    <string name="genre_drama">Drama</string>
+    <string name="genre_suspense">Suspenso</string>
+    <string name="date_birth">Fecha de nacimiento</string>
+    <string name="data_picker">Fecha de nacimiento</string>
+    <string name="birth_place">Ciudad de nacimiento</string>
+</resources>

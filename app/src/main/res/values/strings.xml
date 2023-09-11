@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Mis Peliculas</string>
+    <string name="email">Correo electronico</string>
+    <string name="Password">Contraseña</string>
+    <string name="rep_password">Repetir contraseña</string>
+    <string name="Register">Registro</string>
+    <string name="information">Informacion</string>
+    <string name="register">Registrar</string>
+    <string name="female">Femenino</string>
+    <string name="male">Masculino</string>
+    <string name="favorite_movies">Selecciona tus generos favoritos</string>
+    <string name="genre_action">Accion</string>
+    <string name="genre_love">Amor</string>
+    <string name="genre_terror">Terror</string>
+    <string name="genre_aventure">Aventura</string>
+    <string name="genre_fantasy">Fantasia</string>
+    <string name="genre_comedy">Comedia</string>
+    <string name="genre_fiction">Ficcion</string>
+    <string name="genre_drama">Drama</string>
+    <string name="genre_suspense">Suspenso</string>
+    <string name="date_birth">Fecha de nacimiento</string>
+    <string name="data_picker">Fecha de nacimiento</string>
+    <string name="birth_place">Ciudad de nacimiento</string>
+    <string-array name="city_list">
+        <item>Seleciona</item>
+        <item>Medellin</item>
+        <item>Pereira</item>
+        <item>Bogota</item>
+        <item>Bucaramanga</item>
+        <item>Cali</item>
+    </string-array>
+</resources>
